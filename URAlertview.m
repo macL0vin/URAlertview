@@ -28,7 +28,9 @@
     {
         self.onTap = block;
         
-        UIView *blurView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [ASize screenWidth], [ASize screenHeight])];
+        CGSize screenSize = [UIScreen mainScreen].bounds.size;
+        
+        UIView *blurView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenSize.width, screenSize.height)];
         blurView.backgroundColor = [UIColor colorWithWhite:0 alpha:.6];
         blurView.alpha = 0;
         
@@ -68,8 +70,8 @@
         [menuView addSubview:okButton];
         
         menuView.height = okButton.bottom;
-        menuView.centerX = [ASize screenWidth] * 0.5;
-        menuView.centerY = [ASize screenHeight] * 0.5 - 50;
+        menuView.centerX = screenSize.width * 0.5;
+        menuView.centerY = screenSize.height * 0.5 - 50;
         
         AppDelegate *appdelegate = [UIApplication sharedApplication].delegate;
         [[appdelegate window] addSubview:blurView];
