@@ -29,7 +29,7 @@
         UIView *menuView = [[UIView alloc] init];
         menuView.x = 0;
         menuView.y = 0;
-        menuView.width = ([ASize screenWidth] * 0.5) * 0.75;
+        menuView.width = (screenSize.width * 0.5) * 0.75;
         menuView.height = 100;
         menuView.layer.cornerRadius = 10;
         menuView.layer.masksToBounds = YES;
@@ -54,7 +54,7 @@
         okButton.x = 0;
         okButton.y = notificationLabel.bottom + 30;
         okButton.width = menuView.width;
-        okButton.height = kEmployeSearchCellHeight;
+        okButton.height = 70;
         [okButton setTitle:@"OK" forState:UIControlStateNormal];
         [okButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         okButton.backgroundColor = color;
