@@ -1,9 +1,7 @@
 //
 //  URAlertview.m
-//  Workshare
-//
 //  Created by Uahit Ramazanov on 11/2/15.
-//  Copyright © 2015 kmgpIT. All rights reserved.
+//  Copyright © 2015. All rights reserved.
 //
 
 #import "URAlertview.h"
